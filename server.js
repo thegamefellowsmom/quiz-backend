@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(cors());
 
 // Connect to MongoDB (Replace with your MongoDB URI)
-mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true });
+/*mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 const QuizSchema = new mongoose.Schema({
   question: String,
@@ -30,7 +30,7 @@ app.get("/quizzes", async (req, res) => {
   const quizzes = await Quiz.find();
   res.json(quizzes);
 });
-
+*/
 // Test Route
 app.get("/", (req, res) => {
   res.send("Backend is running locally!");
